@@ -1,0 +1,27 @@
+{
+  "name": "zhchenxin/laravel-upload",
+  "description": "laravel upload",
+  "keywords": ["upload", "laravel"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhchenxin",
+      "email": "1577838065@qq.com"
+    }
+  ],
+  "require": {
+    "intervention/image": "2.4.2"
+  },
+  "require-dev": {
+    "illuminate/support": "~5.1",
+    "illuminate/http": "~5.1",
+    "illuminate/config": "~5.1",
+    "illuminate/validation": "~5.1",
+    "illuminate/contracts": "~5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zhchenxin\\Upload\\": "src/"
+    }
+  }
+}
