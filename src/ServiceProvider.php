@@ -14,7 +14,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             'prefix' => Config::get('upload.route_prefix'),
             'domain' => Config::get('upload.route_domain'),
             'middleware' => [],
-        ], function(Route $router) {
+        ], function($router) {
             $router->post('/upload', 'UploadController@upload');
             $router->get('/c/{day}/{time}/{file}', 'UploadController@show');
         });

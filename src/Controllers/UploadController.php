@@ -36,8 +36,11 @@ class UploadController
 
         // 返回值
         return response()->json([
-            'filename' => $filename,
-            'file_url' => Config::get('app.url') . '/show' . $filename,
+            'code' => 0,
+            'data' => [
+                'filename' => '/c' . $filename,
+                'file_url' => Config::get('app.url') . '/c' . $filename,
+            ],
         ]);
     }
 
