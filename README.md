@@ -26,7 +26,7 @@ composer require zhchenxin/laravel-upload
 
 ```
 curl -X POST \
-  http://192.168.33.10:8000/upload \
+  http://localhost/upload \
   -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
   -F file=@efqomc0rcmu.jpg
 ```
@@ -47,7 +47,7 @@ curl -X POST \
 
 ### 图片压缩
 
-如果上传的是 'png', 'jpg', 'jpeg', 'gif'，则这些图片可以进行压缩显示，减少贷款
+如果上传的是 'png', 'jpg', 'jpeg', 'gif'，则这些图片可以进行压缩显示
 
 ```
 压缩成长：200 宽：100 的图片
